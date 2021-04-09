@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Vector;
 
-public class BugStock {
+public class BuyStock {
 
     public static void main(String[] args) {
         int[] stock = {5,5,7,1,9,6,4,88,9,99,1,200};
