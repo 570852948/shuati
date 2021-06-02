@@ -29,7 +29,7 @@ public class Traversal {
         return list;
     }
 
-    //输出
+    //输出二叉树
     public void O(BinaryTree b) {
         if(b != null){
             System.out.println(b.data);

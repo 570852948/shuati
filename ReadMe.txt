@@ -1,4 +1,4 @@
-Camel Router Spring Project
+Camel Router spring Project
 ===========================
 
 To build this project use

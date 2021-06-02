@@ -1,4 +1,8 @@
-package proxy;
+package designMode.proxy.eg1;
+
+import designMode.proxy.eg1.DynamicProxy;
+import designMode.proxy.eg1.RealSubject;
+import designMode.proxy.eg1.Subject;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;

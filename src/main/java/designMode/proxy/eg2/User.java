@@ -1,4 +1,4 @@
-package proxy;
+package designMode.proxy.eg2;
 
 public interface User {
 

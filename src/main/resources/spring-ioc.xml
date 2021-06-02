@@ -8,4 +8,5 @@
         http://www.springframework.org/schema/context/spring-context.xsd" >
 
     <context:component-scan base-package="spel"></context:component-scan>
+    <context:component-scan base-package="spring"></context:component-scan>
  </beans>

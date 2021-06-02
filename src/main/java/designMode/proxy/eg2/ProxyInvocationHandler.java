@@ -1,15 +1,24 @@
-package proxy;
+package designMode.proxy.eg2;
 
 import java.lang.reflect.InvocationHandler;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
+
+/**
+ * InvocationHandler is the interface implemented by the invocation handler of a proxy instance.
+ * Each proxy instance has an associated invocation handler. When a method is invoked on a proxy instance,
+ * the method invocation is encoded and dispatched to the invoke method of its invocation handler.
+ */
 
 //动态代理
 public class ProxyInvocationHandler implements InvocationHandler {
     private Object target;
 
-    //被代理的接口
+    //传入代理的真实对象
     public void setTarget(Object target) {
         this.target = target;
     }
@@ -23,7 +32,7 @@ public class ProxyInvocationHandler implements InvocationHandler {
     //
     /**
     * @Description: proxyInvocationHandler.getProxy()生成的实例在执行代理对象的方法时会调用这里自定义的invoke()方法
-    * @Param: [proxy, method, args] method参数是根据调用的方法来传值的  比如调用sell()方法 则会把sell方法的属性传过来
+    * @Param: [designMode.proxy, method, args] method参数是根据调用的方法来传值的  比如调用sell()方法 则会把sell方法的属性传过来
     * @return: java.lang.Object
     * @Author: Mr.Pan
     * @Date: 2021/3/28
@@ -31,7 +40,6 @@ public class ProxyInvocationHandler implements InvocationHandler {
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         System.out.println("测试");
-
 
         method.invoke(target,args);
 
