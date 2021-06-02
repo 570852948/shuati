@@ -11,5 +11,11 @@ public class StaticTest{
                 x++;
                StaticTest.x--;
                System.out.println("x="+x);
+
+
             }
+
+
+
+
    } 

@@ -1,4 +1,4 @@
-package proxy;
+package designMode.proxy;
 
 public class RealSubject implements Subject
 {

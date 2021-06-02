@@ -218,7 +218,6 @@ public class Solution {
             ArrayList arrayList = new ArrayList();
             lastEvery = duilie.getLast();
             while (curr != lastEvery) {
-
                 //取出第一个进入队列的元素，并删除
                 curr = duilie.poll();
                 if (curr.left != null) {
@@ -227,16 +226,11 @@ public class Solution {
                 if (curr.right != null) {
                     duilie.offer(curr.right);
                 }
-
-
                 arrayList.add(curr.val);
-
             }
             arrayLists.add(arrayList);
         }
         return arrayLists;
-
-
     }
 
 

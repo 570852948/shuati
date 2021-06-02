@@ -11,6 +11,7 @@ public class TheadPoolTest {
         //ExecutorService executorService = Executors.newCachedThreadPool();//可伸缩大小
         //阿里巴巴建议用创建ThreadPoolExecutor
 
+        //多线程只能在main函数里用  主线程使用
 
         ExecutorService executorService = new ThreadPoolExecutor(
                 2,

@@ -1,4 +1,4 @@
-package proxy;
+package designMode.proxy;
 
 public class UserImp implements User{
     public void buy() {

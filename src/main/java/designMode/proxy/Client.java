@@ -1,4 +1,4 @@
-package proxy;
+package designMode.proxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;

@@ -1,4 +1,4 @@
-package proxy;
+package designMode.proxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -6,7 +6,7 @@ import java.lang.reflect.Method;
 public class DynamicProxy implements InvocationHandler
 {
     //　这个就是我们要代理的真实对象
-    private Object subject;
+    private final Object subject;
 
     //    构造方法，给我们要代理的真实对象赋初值
     public DynamicProxy(Object subject)

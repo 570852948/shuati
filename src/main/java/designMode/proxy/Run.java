@@ -1,4 +1,5 @@
-package proxy;
+package designMode.proxy;
+
 
 import java.lang.reflect.Proxy;
 
@@ -9,9 +10,13 @@ public class Run {
         UserImp userImp = new UserImp();
 
         ProxyInvocationHandler proxyInvocationHandler = new ProxyInvocationHandler();
+        //设置代理的接口
         proxyInvocationHandler.setTarget(userImp);
 
-        User user = (User) proxyInvocationHandler.getProxy();
+        //User user = (User) proxyInvocationHandler.getProxy();
+        Class[] classes = {User.class};
+        User user = (User) Proxy.newProxyInstance(proxyInvocationHandler.getClass().getClassLoader(),classes, proxyInvocationHandler);
+
         //User user = (User) Proxy.newProxyInstance(proxyInvocationHandler.getClass().getClassLoader(), userImp.getClass().getInterfaces(), proxyInvocationHandler);
 
         user.sell();

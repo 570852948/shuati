@@ -3,7 +3,7 @@ package 继承;
 import java.lang.reflect.Field;
 
 class ReflectionTest{
-    private String str="csdn";
+    private final String str="csdn";
     public void print(){
         System.out.println(str);
     }
