@@ -1,12 +1,10 @@
-<<<<<<< HEAD:src/main/java/designMode/proxy/eg1/Client.java
+
 package designMode.proxy.eg1;
 
 import designMode.proxy.eg1.DynamicProxy;
 import designMode.proxy.eg1.RealSubject;
 import designMode.proxy.eg1.Subject;
-=======
-package designMode.proxy;
->>>>>>> origin/dev:src/main/java/designMode/proxy/Client.java
+
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
